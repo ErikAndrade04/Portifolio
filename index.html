@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Claude, estudante de tecnologia em busca de estágio.">
+  <title> | Portfólio de Desenvolvimento Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+</head>
+<body>
+  <a class="pular" href="#principal">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container barra">
+      <a href="#inicio" class="logo" aria-label=", ir para o início">&lt;/Erikandrade04&gt;</a>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="acoes">
+        <button id="btn-tema" class="icone" type="button" aria-label="Ativar modo escuro" aria-pressed="false">◐</button>
+        <button id="btn-menu" class="icone hamburguer" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="principal">
+    <section id="inicio" class="hero" aria-labelledby="t-inicio">
+      <div class="container grade-hero">
+        <div>
+          <p id="saudacao" class="saudacao" aria-live="polite">Olá!</p>
+          <h1 id="t-inicio">Eu sou. Meu nome é Erik Andrade.Eu Sou estudante de Tecnologia da informação no Senac RN.</h1>
+          <p class="lead">Construo páginas e pequenas aplicações com HTML, CSS e JavaScript puros, e procuro um estágio para aprender em equipe.</p>
+          <a class="botao" href="#projetos">Ver projetos</a>
+        </div>
+        <img class="avatar" src="img/Avatar.jpeg" width="260" height="260" alt="Ilustração de um desenvolvedor sorrindo com camisa amarela">
+      </div>
+    </section>
+
+    <section id="sobre" class="secao" aria-labelledby="t-sobre">
+      <div class="container">
+        <h2 id="t-sobre">Sobre mim</h2>
+        <div class="duas-colunas">
+          <p>Sou estudante de T.I. E descobri que gosto de transformar ideias em paginas na Web.</p>
+          <p><strong>Objetivo:</strong> conquistar uma vaga de estágio, contribuir com tarefas reais, receber feedback de pessoas mais experientes e crescer em direção ao desenvolvimento full stack.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="secao alt" aria-labelledby="t-hab">
+      <div class="container">
+        <h2 id="t-hab">Habilidades</h2>
+        <h3>Já uso</h3>
+        <ul class="tags" aria-label="Tecnologias que já uso">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Git e GitHub</li><li>Acessibilidade básica</li>
+        </ul>
+        <h3>Estou aprendendo</h3>
+        <ul class="tags aprendendo" aria-label="Tecnologias que estou aprendendo">
+          <li>Node.js</li><li>SQL</li><li>React</li><li>Testes automatizados</li><li>Python</li><li>Json</li><li>Flask</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="secao" aria-labelledby="t-proj">
+      <div class="container">
+        <h2 id="t-proj">Projetos</h2>
+        <!-- SUBSTITUA pelos seus projetos reais do curso -->
+        <div class="grade-projetos">
+          <article class="cartao">
+            <h3>Games Hub Edu</h3>
+            <p>Site para ajudar estudantes a estudar enquanto se diverte, com jogos educativos e quizzes rapidos sobre determinado assunto.</p>
+            <p class="tec">HTML · CSS · Python · SQL · Json</p>
+            <a href="#" aria-label="Ver código do projeto Lista de tarefas no GitHub">Ver código</a>
+          </article>
+          <article class="cartao">
+            <h3>Agosto lil-s</h3>
+            <p>Site criado com o proposito de concientizar as pessoas sobre a violência contra a mulher.</p>
+            <p class="tec">HTML · CSS</p>
+            <a href="#" aria-label="Ver código do projeto Calculadora de IMC no GitHub">Ver código</a>
+          </article>
+          <article class="cartao">
+            <h3>Portifolio</h3>
+            <p>Portifolio profissional, falando um pouco sobre mim.</p>
+            <p class="tec">HTML · CSS · JavaScript</p>
+            <a href="#" aria-label="Ver código do projeto Site de cafeteria no GitHub">Ver código</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao alt" aria-labelledby="t-cont">
+      <div class="container estreito">
+        <h2 id="t-cont">Contato</h2>
+        <form id="form" novalidate aria-describedby="privacidade">
+          <div class="campo">
+            <label for="nome">Nome</label>
+            <input id="nome" name="nome" type="text" autocomplete="name" required aria-describedby="erro-nome">
+            <span id="erro-nome" class="erro" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="erro-email">
+            <span id="erro-email" class="erro" role="alert"></span>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required aria-describedby="erro-mensagem"></textarea>
+            <span id="erro-mensagem" class="erro" role="alert"></span>
+          </div>
+          <div class="campo check">
+            <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="erro-consentimento">
+            <label for="consentimento">Concordo em compartilhar meu nome e e-mail apenas para retorno desta mensagem.</label>
+            <span id="erro-consentimento" class="erro" role="alert"></span>
+          </div>
+          <p id="privacidade" class="nota">Seus dados não são enviados nem armazenados: este formulário é uma demonstração.</p>
+          <button class="botao" type="submit">Enviar mensagem</button>
+          <p id="retorno" class="retorno" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container barra">
+      <p>© <span id="ano">2026</span>. Todos os direitos reservados.</p>
+      <a href="#inicio" aria-label="Voltar ao topo da página">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
